@@ -3,29 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="secondPage.css">
+    <title>Choose your Genre</title>
+    <link rel="stylesheet" href="genrePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
+
     <div class="bg-img">
-        <div class="opacity">
-        <div class="lights">
-        
-      
-        <div class="switch-toggle switch-3 switch-candy">
-      
-        <input id="on" name="state-d" type="radio" checked="" />
-        <label for="on" onclick="">😁</label>
-      
-        <input id="off" name="state-d" type="radio"  />
-        <label for="off"onclick="">😊</label>
-      
-        <input  id="na" name="state-d" type="radio" checked="checked"  />
-        <label for="na" class="disabled" onclick="">🤧</label>
-       </div>   
+        <div class="opacity"></div>
+        <div class="heading ">
+        <h3 class="headGenre">Pick the Genres and the Era</h3>
+       
+        <p class="pickGenre">
+            Select One Option from each row:
+        </p>
+
+    </div>
+
+          
     
+
+    <div class="radio-row">
+        <div class="radio-group">
+            <input type="radio" id="row1-option1" name="row1" class="hidden-radio">
+            <label for="row1-option1">HAPPY</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="row1-option2" name="row1" class="hidden-radio">
+            <label for="row1-option2">HORROR</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="row1-option3" name="row1" class="hidden-radio">
+            <label for="row1-option3">SAD</label>
+        </div>
     </div>
-</div>
+    <div class="radio-row">
+        <div class="radio-group">
+            <input type="radio" id="row2-option1" name="row2" class="hidden-radio">
+            <label for="row2-option1">COMEDY</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="row2-option2" name="row2" class="hidden-radio">
+            <label for="row2-option2">SCI-FI</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="row2-option3" name="row2" class="hidden-radio">
+            <label for="row2-option3">ACTION</label>
+        </div>
     </div>
+    <div class="radio-row">
+        <div class="radio-group">
+            <input type="radio" id="row3-option1" name="row3" class="hidden-radio">
+            <label for="row3-option1">2000s</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="row3-option2" name="row3" class="hidden-radio">
+            <label for="row3-option2">2010s</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="row3-option3" name="row3" class="hidden-radio">
+            <label for="row3-option3">2020s</label>
+        </div>
+         
+    </div>
+    <!-- ADD NEXT BUTTON -->
+    <div class="next-btn"> 
+        <a href="randomMovie.html"><button class="btn-55" type="button" onclick=""><span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+    </div>
+    <!-- ADD PREVIOUS BUTTON -->
+    <div class="prev-btn"> 
+        <a href="homePage.html"><button class="btn-56" type="button" onclick=""><span><i class="fa-solid fa-arrow-left"></i></span></button></a>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
